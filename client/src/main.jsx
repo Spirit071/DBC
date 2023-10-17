@@ -8,8 +8,8 @@ import { FronteggProvider } from '@frontegg/react';
 const env = import.meta.env
 
 const contextOptions = {
-  baseUrl: "https://app-dld48pr803pb.frontegg.com",
-  clientId: "b01adc65-a7fc-4f47-b039-3850de10807a
+  baseUrl: env.VITE_BASE_URL,
+  clientId: env.VIE_CLIENTID
 };
 
 const authOptions = {
