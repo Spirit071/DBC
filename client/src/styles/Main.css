@@ -1,0 +1,45 @@
+/* Define the animation keyframes */
+@keyframes fallingAnimation {
+    0% {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(20%);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slidingAnimation {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Apply the animation to the falling-text class */
+  .falling-text {
+    animation: fallingAnimation 3.1s ease-in-out both;
+  }
+  
+  .sliding-text {
+    animation: slidingAnimation 3.1s ease-in-out;
+  }
+
+/* Apply a blue gradient to the text inside the <span> element */
+.falling-text span {
+  background-image: linear-gradient(to right, rgb(19, 22, 201), #0074FF, #00B2FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  line-height: 1.27; /* Add this line to adjust the line height */
+}
+
+.falling-text span:hover {
+  cursor: pointer; 
+}

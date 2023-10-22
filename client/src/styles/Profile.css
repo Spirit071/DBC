@@ -1,0 +1,16 @@
+@keyframes risingAnimation {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-200%);
+      opacity: 1;
+    }
+  }
+  
+  .rising-text {
+    transform: translateY(-200%);
+    animation: risingAnimation 3s ease-in;
+  }
+  

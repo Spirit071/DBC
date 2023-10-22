@@ -1,0 +1,18 @@
+@keyframes fallingAnimation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    transform: translateY(-40%);
+    opacity: 1;
+  }
+}
+
+img {
+  animation: fallingAnimation 2s ease-out forwards;
+}
+
